@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index1.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="login">
+        <div id="user" class="shadow-2xl w-fit flex flex-col justify-items-center border-2 ">
+            <div class="text-center">
+                <p>SIGN IN
+                    <hr>
+                </p>
+            </div>
+            <label for="email" class="mx-5">Email</label>
+            <input type="text" id="email" class="border-2 border-black mx-5 p-1 " required>
+            <label for="password" class="mx-5">Password</label>
+            <input type="text" id="password" class="border-2 border-black mx-5 mb-5 p-1 " required>
+            <button onclick="login()" id="btt"
+                class="w-full bg-blue-400 text-xl hover:bg-zinc-400 my-0.5">LOGIN</button>
+            <div id="foot" class=" flex gap-x-11 text-sm flex-col ">
+                <button onclick="move()" class="hover:bg-zinc-400 p-1.5 text-center">Register</button>
+                <button class="hover:bg-zinc-400 p-1 text-center" onclick="forgot()">Forgot Password</button>
+            </div>
+        </div>
+    </div>
+    <div id="SIGN" style="display: none;">
+        <div id="user" class="shadow-2xl w-fit flex flex-col justify-items-center border-2 " >
+            <div class="text-center">
+                <p>SIGN UP
+                    <hr>
+                </p>
+            </div>
+            <label for="name" class="mx-5 mt-3.5">Name</label>
+            <input type="text" id="name" class="border-2 border-black  mx-5 p-1  " required>
+            <label for="mail" class="mx-5">Email</label>
+            <input type="text" id="mail" class="border-2 border-black mx-5 p-1 " required>
+            <label for="pass" class="mx-5">Password</label>
+            <input type="text" id="pass" class="border-2 border-black mx-5 mb-5 p-1 " required>
+            <button onclick="signup()" id="btt"
+                class="w-full bg-blue-400 text-xl hover:bg-zinc-400 my-0.5">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
